@@ -1,8 +1,7 @@
 def get_grid(filename):
     with open(filename) as f:
         grid = []
-        lines = f.readlines()
-        for line in lines:
+        for line in f.readlines():
             grid.append(line.strip('\n'))
     return grid
 
