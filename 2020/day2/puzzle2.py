@@ -8,7 +8,7 @@ def valid_passwords(filename):
         count = 0
         for line in lines:
             # 1-3 a: abcde
-            m = re.match('(?P<min_count>\d+)\-(?P<max_count>\d+) (?P<char>[a-z]): (?P<password>[a-z]+)', line)
+            m = re.match(r'(?P<min_count>\d+)\-(?P<max_count>\d+) (?P<char>[a-z]): (?P<password>[a-z]+)', line)
             if is_password_valid_part2(m.group('password'), m.group('char'), int(m.group('min_count')),
                                        int(m.group('max_count'))):
                 count += 1
