@@ -62,8 +62,6 @@ def part2(filename, cycle):
     w = 0
     Xd = len(l)
     Yd = len(l[0])
-    Z = 1
-    W = 1
 
     for x in range(len(l)):
         for y in range(len(l[0])):
